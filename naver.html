@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin:0}
+        .header{border-top:1px solid #ddd;border-bottom: 1px solid #ddd;}
+        .header h2{text-align: center;height:50px;line-height:50px;vertical-align:middle};
+        .top_tit{font-size:30px;text-align:center;color:#333}
+        .box{display:flex;width: 100%;align-items:center;justify-content:center;height:calc(100% - 50px);  ;}
+        .box .box_wrap{width:300px}
+        .box .box_wrap .txt01{color:#333;font-size:14px;}
+        .box .login_box.or_txt p{position:relative;font-size: 13px;color:#333;text-align:center;}
+        .box .login_box.or_txt p::after,.box .login_box.or_txt p::before{position:absolute;content:"";display: block;width:calc(50% - 20px);height:1px;background-color: blue;}
+        .box .login_box.or_txt p::after{left:0;top:calc(50% - 1px);}
+        .box .login_box.or_txt p::before{right:0;top:calc(50% - 1px);}
+        .box .login_box{display:flex;align-items: center;width:100%}
+        .box .login_box p{text-align:center;height:70px;line-height:20px;}
+        .box .login_box.mobile p{background-repeat: no-repeat;background-position:left 10px center;display: block;}
+        .box .login_box.email p{background-image:url();background-color: #eee;color:#fff;}
+        .box .login_box.naverlog p{background-image:url();background-color:greenyellow;color: #ddd;}
+        .box .login_box.facebook p{background-image:url();background-color:blue;color: #fff;}
+        .box .login_box.line p{background-image:url();background-color:green;color:#fff}
+        .input_box input[type="checkbox"]{width:10px;height:10px}
+    </style>
+</head>
+<body>
+<div class="wrap">
+    <div class="header">
+        <h2><img src="" alt="band"></h2>
+    </div>
+    <div class="box">
+        <div class="box_wrap">
+            <h3 class="top_tit">로그인</h3>
+            <div class="login_box mobile">
+                <p>휴대폰 번호로 로그인</p>
+            </div>
+            <div class="login_box or_txt">
+                <p>또는</p>
+            </div>
+            <div class="login_box email">
+                <p>이메일로 로그인</p>
+            </div>        
+            <div class="login_box naverlog">
+                <p>네이버로 로그인</p>
+            </div>
+            <div class="login_box facebook">
+                <p>페이스북으로 로그인</p>
+            </div>
+            <div class="login_box line">
+                <p>라인으로 로그인</p>
+            </div>
+            <div class="input_box">
+                <input type="checkbox" /><span class="txt01">로그인 상태 유지</span>
+            </div>
+            <div class="txt01">
+                <a>밴드가 처음이신가요? 회원가입</a>
+            </div>
+        </div>  
+    </div>
+</div>    
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <h1 class="logo">
+            <i class="fab fa-youtube"></i>
+            <span class="title">Youtube</span>
+        </h1>
+        <div class="icons">
+            <i class="fas fa-search"></i>
+            <i class="fas fa-ellipsis-v"></i>
+        </div>
+    </header>
+    <section class="player">
+        <video controls autoplay>
+            <source src="video/flower.webm" type="video/mp4" />
+        </video>
+    </section>
+    <div class="section_wrap">
+        <section class="info">
+            <div class="metadata">
+                <ul class="hashTag">
+                    <li>#dreamcording</li>
+                    <li>#dreamcoders</li>
+                    <li>#Ellie</li>
+                </ul>
+                <div class="titleAndbutton">
+                    <p class="title">클론코딩 유튜브 사이트 따라 만들기(HTML+CSS 연습편, 웹 포트폴리오) | 프론트엔드 개발자 입문편: HTML, CSS, Javascript</p>
+                    <button class="more"><i class="fas fa-caret-down"></i></button>
+                </div>
+                <p class="views">
+                   <span>1M views 1 months</span>
+                </p>
+            </div>
+            <ul class="actions">
+                <li><button><i class="fas fa-thumbs-up"></i><span>1K</span></button></li>
+                <li><button><i class="fas fa-thumbs-down"></i><span>0</span></button></li>
+                <li><button><i class="fas fa-share"></i><span>Share</span></button></li>
+                <li><button><i class="fas fa-plus"></i><span>Save</span></button></li>
+                <li><button><i class="fas fa-font-awesome-flag"></i><span>Report</span></button></li>
+            </ul>
+            <!-- channer description -->
+            <div class="channel">
+                <div class="metadata">
+                    <img src="https://yt3.ggpht.com/ytc/AIdro_n_8hS5BGHDs1aNbljYPCJOP-lPUAtOIbTsg2AqjWyyDt4=s48-c-k-c0x00ffffff-no-rj" alt="" />
+                    <div class="info">
+                        <p class="name">드림코딩 by 엘리</p>
+                        <p class="subscribers">1M subscribers</p>
+                    </div>
+                </div>
+                <button class="subscribe">subscribe</button>
+            </div>
+            <!-- // channer description -->
+        </section>
+        <!-- upNext -->
+        <section class="upNext">
+            <span class="upNext_title">Up next</span>    
+            <ul>
+                <li class="item">
+                    <img src="https://i.ytimg.com/vi/7neASrWEFEM/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLDRTsAwJ6Na_6HqxMQxH-XUjYR0LA" alt="">
+                    <div class="info">
+                        <span class="title">CSS Flexbox 완전 정리. 포트폴리오 만드는 날까지! | 프론트엔드</span>
+                        <span class="name">드림코딩</span>
+                        <div class="views">조회수 20만회</div>
+                    </div>
+                    <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
+                </li>
+                <li class="item"></li>
+                <li class="item"></li>
+            </ul>
+        </section>
+    </div>
+
+    <!-- //upnext -->
+</body>
+</html>
