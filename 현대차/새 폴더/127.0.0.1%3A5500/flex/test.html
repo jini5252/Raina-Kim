@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .logo{color:#fff;font-size: 50px;}
+        ul{list-style: none;}
+        ul li{display:inline-block;}
+        .hiddnen{display:none;}
+        ul li a{padding:10px 0;color:#fff;text-decoration:none;}
+        header{background-color:#333;}
+        .header_wrap{padding:0 50px;max-width:1400px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;}
+       .sns{}
+       .sns a{display:inline-block;background-color:#ddd;width: 30px;height:30px;}
+       .sns a + a{margin-right:10px;}
+       .ham_menu{display:none;width:70px;height: 70px;background-color: salmon;}
+       @media screen and (max-width:1024px) {
+        .logo{display:block;width: 1;}
+        ul li{display:block;}
+        .header_wrap{flex-direction: column;}
+        .ham_menu{display:block;}
+        
+       }
+    </style>
+</head>
+
+<body>
+    <header>
+<div class="header_wrap">
+            <h1 class="logo">Dream coding <a href="" class="ham_menu"><img src="" alt=""></a></h1>
+            <ul class="gnb_menu">
+                <li><a href="">Home</a></li>
+                <li><a href="">Gallery</a></li>
+                <li><a href="">Weddings</a></li>
+                <li><a href="">FAQ</a></li>
+                <li><a href="">Bookings</a></li>
+            </ul>
+            <div class="sns">
+                <a href="" class="sns_icon" title=""><img src="" alt=""></a>
+                <a href="" class="sns_icon" title=""><img src="" alt=""></a>
+            </div>
+</div>
+
+    </header>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+<script language="javascript">
+    document.getElementsByClassName('ham_menu').addEventListener('click', function() {
+        const menu = document.getElementByClass('gnb_menu');
+        const menu2 = document.getElementByClass('sns');
+    menu.classList.toggle('sns');
+});
+</script>
+
+</html>
