@@ -1,3 +1,6 @@
 [submodule "vue"]
     path = vue
-    url =https://github.com/jini5252/Raina-Kim.git
+    url = https://github.com/jini5252/Raina-Kim.git
+[submodule "슬라이드개선수정"]
+    path = 슬라이드개선수정
+    url = https://github.com/jini5252/Raina-Kim.git
